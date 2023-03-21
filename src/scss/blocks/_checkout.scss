@@ -1,0 +1,94 @@
+.checkout {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: #D86143;
+    .container {
+        width: 100%;
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+.checkout__img_1 {
+    padding: prc(192.5, 1200) 0;
+    width: prc(385, 1200);
+    position: absolute;
+    top: prc(270, 800);
+    right: prc(100, 1200);
+    border-radius: prc(10, 385);
+    background: url('images/checkout_1.jpg') center/cover no-repeat;
+    z-index: 4;
+    @media (min-width: em(1440, 16)) {
+        padding: 192px 0;
+        width: 385px;
+    }
+    @media (max-width: em(600, 16)) {
+        display: none;
+    }
+}
+.checkout__img_2 {
+    padding: prc(119, 1200) 0;
+    width: prc(177, 1200);
+    position: absolute;
+    top: prc(370, 800);
+    right: prc(90, 1200);
+    background: url('images/checkout_2.jpg') center/cover no-repeat;
+    z-index: 3;
+    @media (min-width: em(1440, 16)) {
+        padding: 119px 0;
+        width: 177px;
+    }
+    @media (max-width: em(600, 16)) {
+        display: none;
+    }
+}
+.checkout__img_3 {
+    padding: prc(218.5, 1200) 0;
+    width: prc(278, 1200);
+    position: absolute;
+    top: prc(120, 800);
+    right: prc(220, 1200);
+    background: url('images/checkout_3.jpg') center/cover no-repeat;
+    z-index: 2;
+    @media (min-width: em(1440, 16)) {
+        padding: 218.5px 0;
+        width: 278px;
+    }
+    @media (max-width: em(600, 16)) {
+        display: none;
+    }
+}
+.checkout__img_4 {
+    padding: prc(285.5, 1200) 0;
+    width: prc(271, 1200);
+    position: absolute;
+    top: prc(80, 800);
+    right: prc(165, 1200);
+    background: url('images/checkout_4.jpg') center/cover no-repeat;
+    z-index: 1;
+    @media (min-width: em(1440, 16)) {
+        padding: 285.5px 0;
+        width: 271px;
+    }
+    @media (max-width: em(600, 16)) {
+        display: none;
+    }
+}
+.checkout__text {
+    margin-bottom: em(36, 32);
+    max-width: em(530, 32);
+    @include ad('font-size', 32, 14, 0);
+    line-height: prc(37, 32);
+    letter-spacing: em(0.32, 32);
+    color: #FFFFFF;
+}
+.checkout__title {
+    max-width: em(560, 120);
+    @include ad('font-size', 120, 36, 0);
+    line-height: prc(140, 120);
+    letter-spacing: em(3.9, 120);
+    color: #FFFFFF;
+}

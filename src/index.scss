@@ -1,0 +1,40 @@
+
+@import 'css/rebootcss';
+@import 'scss/functions/functions';
+@import 'scss/mixins/adaptive';
+@import 'scss/animation/photoAnim';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: rem(1120 + 30);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.fullscreen_1 {
+    min-height: 100vh;
+    background: url('images/full_1.jpg') 5% 50%/290px 460px no-repeat fixed,
+                url('images/full_2.jpg') 94% 5%/450px 400px no-repeat fixed,
+                url('images/full_3.jpg') 72% 95%/560px 300px no-repeat fixed;
+}
+
+@import './scss/blocks/header';
+@import './scss/blocks/promo';
+@import './scss/blocks/checkout';
+@import './scss/blocks/footer';
